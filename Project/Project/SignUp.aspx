@@ -1,6 +1,44 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="SignUp.aspx.cs" Inherits="Project.SignUp" %>
 
+<%@ Import Namespace="System.Data.SqlClient" %>
+
 <!DOCTYPE html>
+<script runat="server">
+    protected void Button1_Click1(object sender, EventArgs e)
+    {
+        // 1- Create Connection Object
+        SqlConnection conn = new SqlConnection();
+        conn.ConnectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|Database1.mdf;Integrated Security=True";
+
+        // 2- Create SQL Insert statement string
+
+        string strInsert = String.Format("INSERT INTO User1 VALUES('{0}', '{1}', '{2}', '{3}', '{4}', '{5}', '{6}', '{7}')", txtfname.Text, txtlname.Text, txtemail.Text, txtmobile.Text, rdbgender.SelectedValue, ddllocation.SelectedValue, txtid.Text , txtpassword.Text);
+
+        // 3- Create SQL Command
+        SqlCommand cmdInsert = new SqlCommand(strInsert, conn);
+
+
+        try
+        {
+
+
+
+            conn.Open();
+
+
+            cmdInsert.ExecuteNonQuery();
+
+
+            conn.Close();
+            lblMsg.Text = "Welcome " + txtfname.Text + ", Your Account has been Successfully Created!!";
+        }
+        catch (SqlException err)
+        {
+            lblMsg.Text = "The system is not available at the moment, you may try later !!";
+
+        }
+    }
+</script>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
@@ -68,10 +106,10 @@
                 </tr>
                 <tr>
                     <td class="auto-style7">
-                        <asp:TextBox ID="TextBox9" runat="server" Font-Names="Elephant" Width="171px"></asp:TextBox>
+                        <asp:TextBox ID="txtfname" runat="server" Font-Names="Elephant" Width="171px"></asp:TextBox>
                     </td>
                     <td class="auto-style8">
-                        <asp:TextBox ID="TextBox8" runat="server" Font-Names="Elephant" Width="171px"></asp:TextBox>
+                        <asp:TextBox ID="txtlname" runat="server" Font-Names="Elephant" Width="171px"></asp:TextBox>
                     </td>
                     <td class="auto-style9">
                         </td>
@@ -97,10 +135,10 @@
                 </tr>
                 <tr>
                     <td class="auto-style3">
-                        <asp:TextBox ID="TextBox10" runat="server" Font-Names="Elephant" Width="171px"></asp:TextBox>
+                        <asp:TextBox ID="txtemail" runat="server" Font-Names="Elephant" Width="171px" TextMode="Email"></asp:TextBox>
                     </td>
                     <td class="auto-style5">
-                        <asp:TextBox ID="TextBox11" runat="server" Font-Names="Elephant" Width="171px"></asp:TextBox>
+                        <asp:TextBox ID="txtmobile" runat="server" Font-Names="Elephant" Width="171px" TextMode="Number"></asp:TextBox>
                     </td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
@@ -117,7 +155,7 @@
                         <asp:Label ID="Label10" runat="server" Text="Gender" Font-Bold="True" Font-Names="Yu Gothic UI Semilight" Font-Size="Medium"></asp:Label>
                     </td>
                     <td class="auto-style6">
-                        <asp:RadioButtonList ID="RadioButtonList1" runat="server" Font-Names="Yu Gothic UI Semilight" Font-Overline="False" Font-Size="Medium" RepeatDirection="Horizontal">
+                        <asp:RadioButtonList ID="rdbgender" runat="server" Font-Names="Yu Gothic UI Semilight" Font-Overline="False" Font-Size="Medium" RepeatDirection="Horizontal">
                             <asp:ListItem Value="M">Male</asp:ListItem>
                             <asp:ListItem Value="F">Female</asp:ListItem>
                         </asp:RadioButtonList>
@@ -137,7 +175,7 @@
                         <asp:Label ID="Label11" runat="server" Text="Location " Font-Bold="True" Font-Names="Yu Gothic UI Semilight" Font-Size="Medium"></asp:Label>
                     </td>
                     <td class="auto-style6">
-                        <asp:DropDownList ID="DropDownList1" runat="server" Font-Names="Yu Gothic UI Semilight" Font-Size="Medium">
+                        <asp:DropDownList ID="ddllocation" runat="server" Font-Names="Yu Gothic UI Semilight" Font-Size="Medium">
                             <asp:ListItem></asp:ListItem>
                             <asp:ListItem></asp:ListItem>
                             <asp:ListItem></asp:ListItem>
@@ -166,7 +204,7 @@
                         <asp:Label ID="Label2" runat="server" Text="National ID" Font-Bold="True" Font-Names="Yu Gothic UI Semilight" Font-Size="Medium"></asp:Label>
                     </td>
                     <td class="auto-style8">
-                        <asp:TextBox ID="TextBox15" runat="server" Font-Names="Elephant" Width="171px"></asp:TextBox>
+                        <asp:TextBox ID="txtid" runat="server" Font-Names="Elephant" Width="171px" TextMode="Number"></asp:TextBox>
                     </td>
                     <td class="auto-style9"></td>
                     <td class="auto-style9"></td>
@@ -206,10 +244,10 @@
                 </tr>
                 <tr>
                     <td class="auto-style3">
-                        <asp:TextBox ID="TextBox14" runat="server" Font-Names="Elephant" Width="171px"></asp:TextBox>
+                        <asp:TextBox ID="txtpassword" runat="server" Font-Names="Elephant" Width="171px" TextMode="Password"></asp:TextBox>
                     </td>
                     <td class="auto-style5">
-                        <asp:TextBox ID="TextBox13" runat="server" Font-Names="Elephant" Width="171px"></asp:TextBox>
+                        <asp:TextBox ID="txtconfirm" runat="server" Font-Names="Elephant" Width="171px" TextMode="Password"></asp:TextBox>
                     </td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
@@ -222,13 +260,14 @@
                 </tr>
                 <tr>
                     <td class="auto-style3">&nbsp;</td>
-                    <td class="auto-style5">&nbsp;</td>
+                    <td class="auto-style5">
+                        &nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
                     <td colspan="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        <asp:Button ID="Button1" runat="server" Text="Button" Font-Names="Elephant" Height="35px" Width="191px" />
+                        <asp:Button ID="Button1" runat="server" Text="Submit" Font-Names="Elephant" Height="35px" Width="191px" OnClick="Button1_Click1" />
                     </td>
                 </tr>
                 <tr>
@@ -238,7 +277,9 @@
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
-                    <td class="auto-style3">&nbsp;</td>
+                    <td class="auto-style3">
+                        <asp:Label ID="lblMsg" runat="server" Text="Label"></asp:Label>
+                    </td>
                     <td class="auto-style5">&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
