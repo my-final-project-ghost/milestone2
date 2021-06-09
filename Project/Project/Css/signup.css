@@ -1,0 +1,39 @@
+﻿body {
+    background-color: #c5c6d0;
+}
+.fas fa-id-card {
+color:aqua;
+font-size:50px;
+}
+.container {
+    margin-left:600px;
+    
+}
+#txtfname{
+    width:163px;
+    height:25px;
+}
+#txtlname {
+    width: 163px;
+    height: 25px;
+}
+#txtid {
+    width: 163px;
+    height: 25px;
+}
+#txtmobile{
+    width: 163px;
+    height: 25px;
+}
+#txtemail {
+    width: 163px;
+    height: 25px;
+}
+#txtpassword {
+    width: 163px;
+    height: 25px;
+}
+#txtconfirm {
+    width: 163px;
+    height: 25px;
+}

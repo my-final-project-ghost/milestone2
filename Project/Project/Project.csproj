@@ -58,6 +58,9 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Css\navbarr.css" />
+    <Content Include="Img\id-card.png" />
+    <Content Include="JS\JavaScript.js" />
     <Content Include="libman.json" />
     <Content Include="lib\twitter-bootstrap\js\bootstrap.bundle.js.map" />
     <None Include="Web.Debug.config">
@@ -73,7 +76,6 @@
       <DependentUpon>Database1.mdf</DependentUpon>
     </Content>
     <Content Include="Css\Edit.css" />
-    <Content Include="Css\navbar.css" />
     <Content Include="Img\backgroung.jpg" />
     <Content Include="Img\Logo.png" />
     <Content Include="Index.html" />
@@ -92,6 +94,7 @@
     <Content Include="Navbar.html" />
     <Content Include="news.aspx" />
     <Content Include="SignUp.aspx" />
+    <Content Include="Css\signup.css" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
