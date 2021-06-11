@@ -1,0 +1,140 @@
+﻿body {
+    background-color: #8a8b91;
+   /* min-height: 100%;
+    margin-bottom: -142px;*/
+}
+
+
+.fff {
+    width: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.8);
+    margin-left: 650px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    position: absolute;
+    background-color: rgba(197, 198, 208, 0.6);
+    z-index: 1;
+    border-radius: 2%;
+}
+#txtfname{
+    width:163px;
+    height:25px;
+}
+#txtlname {
+    width: 163px;
+    height: 25px;
+}
+#txtid {
+    width: 163px;
+    height: 25px;
+}
+#txtmobile{
+    width: 163px;
+    height: 25px;
+}
+#txtemail {
+    width: 163px;
+    height: 25px;
+}
+#txtpassword {
+    width: 163px;
+    height: 25px;
+}
+#txtconfirm {
+    width: 163px;
+    height: 25px;
+}
+.fa-check {
+    color: #343a40;
+}
+
+
+.navbar {
+    font-size: 25px;
+    font-weight:bold;
+    font-family:Arial;
+}
+
+
+nav ul li a {
+    position: relative;
+    z-index: 1;
+    margin-left:30px;
+}
+
+    nav ul li a:hover {
+        color: #91640F;
+    }
+
+    nav ul li a:after {
+        transition: all 2s;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+        width: 100%;
+        height: 1px;
+        content: '.';
+        color: transparent;
+        background: #5a6875;
+        visibility: visible;
+        opacity: 0;
+        z-index: -1;
+    }
+
+    nav ul li a:hover:after {
+        opacity: 1;
+        visibility: visible;
+        height: 100%;
+    }
+form {
+
+width:70%!important;
+}
+.bg-dark {
+    background-color: #222023 !important;
+}
+.sss {
+text-align:center;
+
+}
+.div_back {
+    position: inherit!important;
+}
+
+.back_img {
+    position: absolute !important;
+    background-image: url(../Img/backgroung.jpg) !important;
+    background-repeat: no-repeat !important;
+    opacity: 0.7 !important;
+    background-position: 50% 50% !important;
+    display: block !important;
+    background-size: cover !important;
+    height: 900px !important;
+    /*    overflow: hidden !important;
+*/ top: 0px !important;
+    left: 0px !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    z-index: -1 !important;
+    background-blend-mode: screen;
+}
+.footback {
+    background-color: #222023 !important;
+    z-index: 1 !important;
+}
+.form-control:focus {
+    border-color: #CFB000 !important;
+    box-shadow: 0 0 0 0.2rem rgba(219, 187, 4, 0.25) !important;
+}
+.dropp {
+    border-color: #E3B520;
+}
+
+.dropp:focus {
+        border-color: #CFB000 !important;
+        box-shadow: 0 0 0 0.2rem rgba(219, 187, 4, 0.25) !important;
+}

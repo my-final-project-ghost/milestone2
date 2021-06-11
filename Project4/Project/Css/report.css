@@ -1,0 +1,21 @@
+﻿body {
+    background-color: #c5c6d0;
+}
+
+.form-control:focus {
+    border-color: #CFB000 !important;
+    box-shadow: 0 0 0 0.2rem rgba(219, 187, 4, 0.25) !important;
+}
+.tbl {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  
+}
+.navbar {
+    font-size: 25px;
+    font-weight: bold;
+    font-family: Arial;
+}
+
+.bg-dark {
+    background-color: #222023 !important;
+}
