@@ -56,7 +56,8 @@
                 koko.Values.Add("Lo", Location);
                 koko.Expires = DateTime.Now.AddDays(3);
                 Response.Cookies.Add(koko);
-                //Response.Redirect("~/usermaster.aspx");
+                Response.Redirect("~/usermaster.aspx");
+
 
 
 
