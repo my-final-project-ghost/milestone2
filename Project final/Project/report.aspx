@@ -126,7 +126,7 @@
                         <a class="nav-link" href="Index.html">Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Signup</a>
+                        <a class="nav-link" href="SignUp.aspx">Signup</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="Login.aspx">Login</a>

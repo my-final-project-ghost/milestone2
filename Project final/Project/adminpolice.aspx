@@ -1,5 +1,19 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/admin.Master" AutoEventWireup="true" CodeBehind="adminpolice.aspx.cs" Inherits="Project.WebForm3" %>
+<%@ Import Namespace="System.Data.SqlClient" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <style type="text/css">
+        .auto-style6 {
+            width: 232px;
+        }
+        .auto-style7 {
+            width: 232px;
+            height: 26px;
+        }
+        .auto-style8 {
+            height: 26px;
+        }
+    </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <p>
@@ -51,9 +65,127 @@
     <p>
         &nbsp;</p>
     <p>
+                        <asp:Button ID="Button2" runat="server" Text="Add user" Font-Names="Elephant" Height="35px" Width="187px" OnClick="Button2_Click2" class="btn btn-dark" BorderColor="#E3B520" ForeColor="#E3B520" />
     </p>
-    <p>
-    </p>
+
+     <script runat="server">
+
+
+
+    protected void Button1_Click1(object sender, EventArgs e)
+    {
+            
+        SqlConnection conn = new SqlConnection();
+        conn.ConnectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|Database1.mdf;Integrated Security=True";
+
+
+       string  strInsert = String.Format("INSERT INTO Police1 VALUES('{0}', '{1}', '{2}', '{3}')", txtid.Text, txtfname.Text, txtemail.Text,txtpassword.Text);
+
+        SqlCommand cmdInsert = new SqlCommand(strInsert, conn);
+            
+
+
+
+
+            conn.Open();
+
+
+            cmdInsert.ExecuteNonQuery();
+
+
+            conn.Close();
+          
+           
+
+        
+        
+    }
+
+
+    protected void Button2_Click2(object sender, EventArgs e)
+    {
+txtemail.Visible=true;
+txtfname.Visible=true;
+txtid.Visible=true;
+            txtpassword.Visible=true;
+          
+      
+            lbl0.Visible=true;
+            lbl1.Visible=true;
+          
+            lbl3.Visible=true;
+            lbl4.Visible=true;
+         
+            Button1.Visible=true;
+}
+    </script>
+
+
+
+
+
+
+
+
+    <table class="w-100">
+        <tr>
+            <td class="auto-style6">
+                        <asp:Label ID="lbl4" runat="server" Text="ID" Font-Bold="True" Font-Names="Segoe UI Black" Font-Size="Medium" Visible="False"></asp:Label>
+                    </td>
+            <td>
+                        <asp:TextBox ID="txtid" runat="server" Font-Names="Arial" class="form-control"  TextMode="Password" Font-Size="Small" Width="176px" Visible="False" ></asp:TextBox>
+                        </td>
+        </tr>
+        <tr>
+            <td class="auto-style6">
+                        <asp:Label ID="lbl1" runat="server" Text=" Name" Font-Bold="True" Font-Names="Segoe UI Black" Font-Size="Medium" Visible="False"></asp:Label>
+                    </td>
+            <td>
+                        <asp:TextBox ID="txtfname" runat="server" Font-Names="Arial" Width="176px" class="form-control" Font-Size="Small" Visible="False"></asp:TextBox>
+                        </td>
+        </tr>
+        <tr>
+            <td class="auto-style6">
+                        <asp:Label ID="lbl3" runat="server" Text="Email" Font-Bold="True" Font-Names="Segoe UI Black" Font-Size="Medium" Visible="False"></asp:Label>
+                    </td>
+            <td>
+                        <asp:TextBox ID="txtemail" runat="server" Font-Names="Arial"  class="form-control"  TextMode="Email" Font-Size="Small"  Width="176px" Visible="False"></asp:TextBox>
+                        </td>
+        </tr>
+        <tr>
+            <td class="auto-style6"><asp:Label ID="lbl0" runat="server" Text="Password" Font-Bold="True" Font-Names="Segoe UI Black" Font-Size="Medium" Visible="False"></asp:Label>
+                        </td>
+            <td>
+                        <asp:TextBox ID="txtpassword" runat="server" Font-Names="Arial" class="form-control"  TextMode="Password" Font-Size="Small" Width="176px" Visible="False" ></asp:TextBox>
+                        </td>
+        </tr>
+        <tr>
+            <td class="auto-style6">&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td class="auto-style6">&nbsp;</td>
+            <td>
+                        <asp:Button ID="Button1" runat="server" Text="Sign Up" Font-Names="Segoe UI Black" Height="35px" Width="191px" OnClick="Button1_Click1" class="btn btn-dark" BorderColor="#E3B520" ForeColor="#E3B520" Visible="False" />
+                    </td>
+        </tr>
+        <tr>
+            <td class="auto-style7"></td>
+            <td class="auto-style8"></td>
+        </tr>
+        <tr>
+            <td class="auto-style6">&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td class="auto-style6">&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td class="auto-style6">&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+    </table>
     <p>
     </p>
     <p>

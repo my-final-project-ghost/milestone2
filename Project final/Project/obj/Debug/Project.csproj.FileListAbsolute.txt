@@ -12,3 +12,10 @@ C:\Users\Commandor\OneDrive\Documents\GitHub\milestone2\fff\Project\Project\obj\
 C:\Users\Commandor\OneDrive\Documents\GitHub\milestone2\fff\Project\Project\obj\Debug\Project.csproj.CoreCompileInputs.cache
 C:\Users\Commandor\OneDrive\Documents\GitHub\milestone2\fff\Project\Project\obj\Debug\Project.dll
 C:\Users\Commandor\OneDrive\Documents\GitHub\milestone2\fff\Project\Project\obj\Debug\Project.pdb
+C:\Users\Commandor\OneDrive\Documents\GitHub\milestone2\Project final\Project\bin\Project.dll.config
+C:\Users\Commandor\OneDrive\Documents\GitHub\milestone2\Project final\Project\bin\Project.dll
+C:\Users\Commandor\OneDrive\Documents\GitHub\milestone2\Project final\Project\bin\Project.pdb
+C:\Users\Commandor\OneDrive\Documents\GitHub\milestone2\Project final\Project\obj\Debug\Project.csprojAssemblyReference.cache
+C:\Users\Commandor\OneDrive\Documents\GitHub\milestone2\Project final\Project\obj\Debug\Project.csproj.CoreCompileInputs.cache
+C:\Users\Commandor\OneDrive\Documents\GitHub\milestone2\Project final\Project\obj\Debug\Project.dll
+C:\Users\Commandor\OneDrive\Documents\GitHub\milestone2\Project final\Project\obj\Debug\Project.pdb

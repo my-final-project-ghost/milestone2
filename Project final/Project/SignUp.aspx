@@ -140,11 +140,11 @@
             </div>
             </div>
     </nav>
-    <audio controls="controls" autoplay>
+    <%--<audio controls="controls" autoplay>
   <source src="mp3/audio.mp3"  type="audio/mp3" />
   <source src="horse.ogg" type="audio/ogg" />
   <embed height="100" width="100" src="horse.mp3" />
-</audio>
+</audio>--%>
     <section>
     <form id="form1" runat="server" enctype="multipart/form-data">
         <div class="container fff ">

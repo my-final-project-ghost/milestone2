@@ -267,7 +267,7 @@ txtid.Visible=true;
         <tr>
             <td class="auto-style6">&nbsp;</td>
             <td>
-                        &nbsp;</td>
+                        </td>
             <td>&nbsp;</td>
         </tr>
         <tr>
