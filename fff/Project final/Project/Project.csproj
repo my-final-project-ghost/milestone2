@@ -1,0 +1,251 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{35335E9D-6001-447D-9668-72C212C9638E}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Project</RootNamespace>
+    <AssemblyName>Project</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44371</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="card-news\card1.jpg" />
+    <Content Include="card-news\card2.jpg" />
+    <Content Include="card-news\card3.jpg" />
+    <Content Include="card-news\card4.jpg" />
+    <Content Include="card-news\card5.jpg" />
+    <Content Include="Css\report.css" />
+    <Content Include="report.aspx" />
+    <Content Include="Css\login.css" />
+    <Content Include="Css\navbarr.css" />
+    <Content Include="Css\homepage.css" />
+    <Content Include="Css\scratch.css" />
+    <Content Include="footer.html" />
+    <Content Include="homepage.html" />
+    <Content Include="Img\id-card.png" />
+    <Content Include="JS\JavaScript.js" />
+    <Content Include="JS\jquery-3.5.1.min.js" />
+    <Content Include="libman.json" />
+    <Content Include="lib\twitter-bootstrap\js\bootstrap.bundle.js.map" />
+    <Content Include="news11.html" />
+    <Content Include="news22.html" />
+    <Content Include="news33.html" />
+    <Content Include="news44.html" />
+    <Content Include="news\news1.jpg" />
+    <Content Include="news\news2.jpg" />
+    <Content Include="news\news3.jpg" />
+    <Content Include="news\news4.jpg" />
+    <Content Include="user.Master" />
+    <Content Include="usermaster.aspx" />
+    <Content Include="admin.Master" />
+    <Content Include="adminuser.aspx" />
+    <Content Include="adminpolice.aspx" />
+    <Content Include="admincomp.aspx" />
+    <Content Include="adminhome.aspx" />
+    <Content Include="police.Master" />
+    <Content Include="plicecomp.aspx" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Data\Database1.mdf" />
+    <Content Include="App_Data\Database1_log.ldf">
+      <DependentUpon>Database1.mdf</DependentUpon>
+    </Content>
+    <Content Include="Css\Edit.css" />
+    <Content Include="Img\backgroung.jpg" />
+    <Content Include="Img\Logo.png" />
+    <Content Include="Index.html" />
+    <Content Include="lib\twitter-bootstrap\css\bootstrap-grid.css" />
+    <Content Include="lib\twitter-bootstrap\css\bootstrap-grid.min.css" />
+    <Content Include="lib\twitter-bootstrap\css\bootstrap-reboot.css" />
+    <Content Include="lib\twitter-bootstrap\css\bootstrap-reboot.min.css" />
+    <Content Include="lib\twitter-bootstrap\css\bootstrap.css" />
+    <Content Include="lib\twitter-bootstrap\css\bootstrap.min.css" />
+    <Content Include="lib\twitter-bootstrap\js\bootstrap.bundle.js" />
+    <Content Include="lib\twitter-bootstrap\js\bootstrap.bundle.min.js" />
+    <Content Include="lib\twitter-bootstrap\js\bootstrap.js" />
+    <Content Include="lib\twitter-bootstrap\js\bootstrap.min.js" />
+    <Content Include="Login.aspx" />
+    <Content Include="logo.html" />
+    <Content Include="mp3\audio.mp3" />
+    <Content Include="Navbar.html" />
+    <Content Include="scratch.html" />
+    <Content Include="SignUp.aspx" />
+    <Content Include="Css\signup.css" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="police.Master.cs">
+      <DependentUpon>police.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="police.Master.designer.cs">
+      <DependentUpon>police.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="report.aspx.cs">
+      <DependentUpon>report.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="report.aspx.designer.cs">
+      <DependentUpon>report.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SignUp.aspx.cs">
+      <DependentUpon>SignUp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SignUp.aspx.designer.cs">
+      <DependentUpon>SignUp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin.Master.cs">
+      <DependentUpon>admin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin.Master.designer.cs">
+      <DependentUpon>admin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="user.Master.cs">
+      <DependentUpon>user.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="user.Master.designer.cs">
+      <DependentUpon>user.Master</DependentUpon>
+    </Compile>
+    <Compile Include="usermaster.aspx.cs">
+      <DependentUpon>usermaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="usermaster.aspx.designer.cs">
+      <DependentUpon>usermaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="adminuser.aspx.cs">
+      <DependentUpon>adminuser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adminuser.aspx.designer.cs">
+      <DependentUpon>adminuser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="adminpolice.aspx.cs">
+      <DependentUpon>adminpolice.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adminpolice.aspx.designer.cs">
+      <DependentUpon>adminpolice.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admincomp.aspx.cs">
+      <DependentUpon>admincomp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admincomp.aspx.designer.cs">
+      <DependentUpon>admincomp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="adminhome.aspx.cs">
+      <DependentUpon>adminhome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adminhome.aspx.designer.cs">
+      <DependentUpon>adminhome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="plicecomp.aspx.cs">
+      <DependentUpon>plicecomp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="plicecomp.aspx.designer.cs">
+      <DependentUpon>plicecomp.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>24600</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44371/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

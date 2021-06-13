@@ -1,0 +1,149 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="police.master.cs" Inherits="Project.police" %>
+<link rel="stylesheet" href="lib/twitter-bootstrap/css/bootstrap.css">
+  <link rel="stylesheet" href="Css/navbarr.css">
+
+    <script src="https://kit.fontawesome.com/a076d05399.js" ></script>
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Police</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 7px;
+        }
+        .auto-style2 {
+            width: 8px;
+        }
+        .auto-style3 {
+            width: 9px;
+        }
+        .auto-style4 {
+            width: 1392px;
+            height: 24px;
+        }
+        .auto-style5 {
+            width: 14px;
+        }
+        .auto-style6 {
+            width: 966px;
+        }
+    </style>
+</head>
+<body>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="">
+            <img src="Img/Logo.png" alt="Logo" width="100" height="100" />
+
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="container sss ">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="Index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Signup</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Login.aspx">Login</a>
+                    </li>
+                    <li class="nav-item">
+<a class="nav-link " href="report.html">Report</a>           
+
+                    </li>
+                </ul>
+
+            </div>
+            </div>
+    </nav>
+
+
+    <form id="form1" runat="server">
+        <div>
+            <br />
+            <br />
+            <br />
+            <table class="auto-style1">
+                <tr>
+                    <td>
+                        <table class="auto-style4">
+                            <tr>
+                                <td class="auto-style3">
+                                    &nbsp;</td>
+                                <td class="auto-style2">
+                                    &nbsp;</td>
+                                <td class="auto-style5">
+                                    &nbsp;</td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td class="auto-style6">&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td class="auto-style6">&nbsp;</td>
+                </tr>
+            </table>
+            <br />
+            <br />
+        
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+     <footer class="bg-dark text-center text-white fixed-bottom footback">
+        <!-- Grid container -->
+        <div class="container p-4 pb-0">
+            <!-- Section: Social media -->
+            <section class="">
+                <!-- Facebook -->
+                <a class="btn btn-dark btn-floating m-1"
+                   style="background-color: #3b5998;"
+                   href="https://www.facebook.com/MoiEgy" target="_blank"
+                   role="button">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+
+                <!-- Twitter -->
+                <a class="btn btn-dark btn-floating m-1"
+                   style="background-color: #55acee;"
+                   href="https://twitter.com/moiegy?lang=ar" target="_blank"
+                   role="button">
+                    <i class="fab fa-twitter"></i>
+                </a>
+
+                <!-- Google -->
+                <a class="btn btn-dark btn-floating m-1"
+                   style="background-color: #dd4b39;"
+                   href="#"
+                   role="button">
+                    <i class="fab fa-google"></i>
+                </a>
+
+                <!-- Instagram -->
+                <a class="btn btn-dark btn-floating m-1"
+                   style="background-color: #ac2bac;"
+                   href="https://www.instagram.com/moiegy/" target="_blank"
+                   role="button">
+                    <i class="fab fa-instagram"></i>
+                </a>
+
+               
+               
+            </section>
+        </div>
+    
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2021 Copyright:
+            <a class="text-white" href="https://www.linkedin.com/in/mahmoud-khaled-9739b1189/">Mahmoud Khaled</a>
+        </div>
+    </footer>
+        <script src="lib/twitter-bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>
