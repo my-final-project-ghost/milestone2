@@ -12,7 +12,6 @@
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <asp:HyperLink ID="HyperLink1" runat="server">HyperLink</asp:HyperLink>
 
     <p>
     </p>
