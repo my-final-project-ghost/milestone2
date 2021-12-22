@@ -5,3 +5,10 @@ G:\U.N.I\Third Year\Design of Web-Based Applications\Projects\Project Web\Projec
 G:\U.N.I\Third Year\Design of Web-Based Applications\Projects\Project Web\Project\Project\obj\Debug\Project.csproj.CoreCompileInputs.cache
 G:\U.N.I\Third Year\Design of Web-Based Applications\Projects\Project Web\Project\Project\obj\Debug\Project.dll
 G:\U.N.I\Third Year\Design of Web-Based Applications\Projects\Project Web\Project\Project\obj\Debug\Project.pdb
+C:\Users\Commandor\OneDrive\Documents\GitHub\milestone2\Project lastest\Project\bin\Project.dll.config
+C:\Users\Commandor\OneDrive\Documents\GitHub\milestone2\Project lastest\Project\bin\Project.dll
+C:\Users\Commandor\OneDrive\Documents\GitHub\milestone2\Project lastest\Project\bin\Project.pdb
+C:\Users\Commandor\OneDrive\Documents\GitHub\milestone2\Project lastest\Project\obj\Debug\Project.csprojAssemblyReference.cache
+C:\Users\Commandor\OneDrive\Documents\GitHub\milestone2\Project lastest\Project\obj\Debug\Project.csproj.CoreCompileInputs.cache
+C:\Users\Commandor\OneDrive\Documents\GitHub\milestone2\Project lastest\Project\obj\Debug\Project.dll
+C:\Users\Commandor\OneDrive\Documents\GitHub\milestone2\Project lastest\Project\obj\Debug\Project.pdb
